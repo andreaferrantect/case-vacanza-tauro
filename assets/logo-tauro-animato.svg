@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 112 122" role="img" aria-labelledby="title desc">
+<title id="title">Logo Case Vacanza Tauro animato</title><desc id="desc">Simbolo mediterraneo: sole arancione, forme terracotta e onde azzurre e blu in movimento delicato.</desc>
+<defs>
+ <radialGradient id="sun" cx="38%" cy="32%" r="72%"><stop stop-color="#ffe76a"/><stop offset=".51" stop-color="#ffb32c"/><stop offset=".89" stop-color="#ff8016"/><stop offset="1" stop-color="#d85910"/></radialGradient>
+ <linearGradient id="terraBack" x1="0" x2=".95" y1=".7" y2="0"><stop stop-color="#9e3824"/><stop offset=".46" stop-color="#d66a40"/><stop offset=".86" stop-color="#f89a62"/></linearGradient>
+ <linearGradient id="terraMid" x1="0" x2="1" y1="0" y2=".7"><stop stop-color="#fc9862"/><stop offset=".52" stop-color="#e6764b"/><stop offset="1" stop-color="#a7412d"/></linearGradient>
+ <linearGradient id="terraFront" x1="0" x2=".9" y1="0" y2="1"><stop stop-color="#ffb074"/><stop offset=".6" stop-color="#f47e57"/><stop offset="1" stop-color="#c4553a"/></linearGradient>
+ <linearGradient id="seaLight" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#abebff"/><stop offset=".3" stop-color="#6bcafa"/><stop offset=".75" stop-color="#43aee8"/><stop offset="1" stop-color="#175786"/></linearGradient>
+ <linearGradient id="seaCyan" x1="0" y1=".15" x2=".8" y2="1"><stop stop-color="#0987b8"/><stop offset=".43" stop-color="#03b6e8"/><stop offset=".77" stop-color="#0877cc"/><stop offset="1" stop-color="#0455b0"/></linearGradient>
+ <linearGradient id="seaBlue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#218fdb"/><stop offset=".38" stop-color="#2969cd"/><stop offset=".8" stop-color="#263fd1"/><stop offset="1" stop-color="#141c90"/></linearGradient>
+ <linearGradient id="seaDeep" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#487de7"/><stop offset=".52" stop-color="#3441d4"/><stop offset="1" stop-color="#171381"/></linearGradient>
+ <linearGradient id="green" x1="0" x2="1"><stop stop-color="#236f21"/><stop offset=".47" stop-color="#469b23"/><stop offset="1" stop-color="#153b23"/></linearGradient>
+ <filter id="glow" x="-90%" y="-90%" width="280%" height="280%"><feGaussianBlur stdDeviation="3"/></filter>
+</defs>
+<style>
+ #sun-group {transform-origin:81px 15px; animation:sun-rise 5.6s cubic-bezier(.16,.85,.3,1) infinite}
+ #terra-group {transform-origin:54px 51px;animation:terracotta 5.6s cubic-bezier(.18,.8,.28,1) infinite}
+ #wave-light {animation:wave-one 5.6s ease-in-out infinite;transform-origin:52px 64px}
+ #wave-cyan {animation:wave-two 5.6s ease-in-out infinite;transform-origin:55px 80px}
+ #wave-blue {animation:wave-one 5.6s ease-in-out infinite .12s;transform-origin:56px 90px}
+ #wave-deep {animation:wave-two 5.6s ease-in-out infinite .18s;transform-origin:54px 100px}
+ #spark {animation:glimmer 5.6s ease-in-out infinite}
+ @keyframes sun-rise {0%{opacity:0;transform:translateY(20px) scale(.6)} 22%,80%{opacity:1;transform:translateY(0) scale(1)} 90%{opacity:1;transform:translateY(-1px) scale(1.025)} 100%{opacity:0;transform:translateY(15px) scale(.8)}}
+ @keyframes terracotta {0%{opacity:0;transform:translateY(12px) scale(.92)} 21%,88%{opacity:1;transform:translateY(0) scale(1)}100%{opacity:0;transform:translateY(7px) scale(.96)}}
+ @keyframes wave-one {0%{opacity:0;transform:translateX(-9px) translateY(7px)} 27%{opacity:1;transform:translate(0,0)} 48%{transform:translate(1px,-1px)} 69%{transform:translate(-.8px,1px)} 87%{opacity:1;transform:translate(0,0)}100%{opacity:0;transform:translateX(-7px) translateY(5px)}}
+ @keyframes wave-two {0%{opacity:0;transform:translateX(10px) translateY(8px)} 29%{opacity:1;transform:translate(0,0)} 49%{transform:translate(-1px,1px)} 70%{transform:translate(1px,-.7px)} 87%{opacity:1;transform:translate(0,0)}100%{opacity:0;transform:translateX(7px) translateY(6px)}}
+ @keyframes glimmer {0%,26%,89%,100%{opacity:0}48%,62%{opacity:.42}}
+ @media (prefers-reduced-motion:reduce){#sun-group,#terra-group,#wave-light,#wave-cyan,#wave-blue,#wave-deep,#spark{animation:none!important;opacity:1!important}}
+</style>
+<!-- Sun, reconstructed as pure vector -->
+<g id="sun-group"><circle cx="81" cy="16" r="10.7" fill="#f6aa36" opacity=".22"/><circle cx="81" cy="16" r="10.2" fill="url(#sun)"/><path d="M76 10.5 Q80.5 7.1 85.5 9.8" fill="none" stroke="#ffe7a3" stroke-opacity=".52" stroke-width=".9" stroke-linecap="round"/></g>
+<!-- Upper forms -->
+<g id="terra-group" stroke-linejoin="round">
+ <path d="M15.6 48.7 C32 49 39 36 46.2 22.2 C47.2 20.1 48.8 20.5 49.3 22.5 C54.6 38.1 67.7 46.3 86.6 49.3 C73.5 58.1 51.7 62.5 32.7 56.1 C23.5 53 18.4 50.5 15.6 48.7Z" fill="url(#terraBack)" stroke="#813922" stroke-width=".85"/>
+ <path d="M47.6 21.3 C50.4 34.4 53.2 47.4 80.1 51.5 C74.9 56.8 67 57.1 58.5 54.7 C49.5 52.3 42.7 43.4 47.6 21.3Z" fill="url(#terraMid)" stroke="#a8482d" stroke-width=".65"/>
+ <path d="M47.4 22 C46.2 33 39 47.3 41.5 54.9 C43 59.5 49 60.4 58.1 58.8 C50.2 54.6 48.3 40 47.4 22Z" fill="url(#terraFront)" stroke="#d46b43" stroke-width=".6"/>
+ <path d="M18 49 C28.5 58.9 39.9 62.3 54.4 62.1 C70.1 62 83 56.2 90.1 48.9" fill="none" stroke="url(#green)" stroke-width="2.9" stroke-linecap="round"/>
+ <path d="M19 49.5 C34 60.8 54 66 76 58.2" fill="none" stroke="#9bc453" stroke-opacity=".58" stroke-width=".7"/>
+</g>
+<!-- Four separately animated original-style ocean ribbons -->
+<g id="wave-light">
+ <path d="M13 49.5 C25 59.5 41.5 65.5 55 65.5 C72 65.5 85 57.4 91.1 51.2 C94.1 61.3 88.8 75.2 81.2 79.6 C69.9 87.7 45.5 81.7 28.8 75.8 C16.7 71.6 12.5 61 13 49.5Z" fill="url(#seaLight)" stroke="#215c83" stroke-width=".8"/>
+ <path d="M16.6 56 C29.8 73.3 64.4 78 87.5 61.3" fill="none" stroke="#dcf8ff" stroke-width="1.7" stroke-opacity=".38"/>
+</g>
+<g id="wave-cyan">
+ <path d="M24.8 72.6 C37.7 65.4 46.3 73.2 57 75 C71.3 77.4 85.7 65.7 92.5 54.4 C94.5 73.3 81 87.2 65.2 91.9 C51.6 96 43.7 94.2 34.3 88.4 C27.1 83.8 24 79.9 24.8 72.6Z" fill="url(#seaCyan)" stroke="#166da6" stroke-width=".75"/>
+ <path d="M26 74 C41 68.7 47 78.9 64.4 77 C78 75.4 85.2 69 90 62" fill="none" stroke="#8deeff" stroke-width="1" stroke-opacity=".55"/>
+</g>
+<g id="wave-blue">
+ <path d="M34.3 88 C43.4 85.1 47.4 83.6 60 84.1 C72.3 84.6 83.5 78.1 89.4 68 C85.2 85.1 76.6 92.3 64.4 97.2 C52.3 102.3 48.7 108 52.2 115 C40 106.8 31.9 99.1 34.3 88Z" fill="url(#seaBlue)" stroke="#244cbd" stroke-width=".7"/>
+ <path d="M35.9 89.7 C44 87 50 85.3 62.8 86.6 C72.8 87.2 81.6 81.1 87 74" fill="none" stroke="#81c3fa" stroke-width="1" stroke-opacity=".52"/>
+</g>
+<g id="wave-deep">
+ <path d="M48.8 99.4 C58.2 93.5 67.8 92.2 78.1 87.6 C70.7 95.5 62.5 103.1 59.1 112.3 C57.7 117.8 59.8 119 61.2 119.2 C51.4 115.5 46.8 108.4 48.8 99.4Z" fill="url(#seaDeep)" stroke="#222caa" stroke-width=".6"/>
+</g>
+<path id="spark" d="M32 65 C48 73 69 71 85 60" fill="none" stroke="#ffffff" stroke-width="1.15" stroke-linecap="round" opacity="0"/>
+</svg>

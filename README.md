@@ -1,27 +1,19 @@
-# Case Vacanza Tauro – Taormina
+# Case Vacanza Tauro – Taormina · Laboratorio Premium
 
-Laboratorio frontend del sito web, con stile **Mediterranean Luxury**.
-
-## Anteprima
-- [Home](./index.html)
-- [Vulcano](./vulcano.html)
-- Dopo aver attivato GitHub Pages: `https://andreaferrantect.github.io/case-vacanza-tauro/`
-
-## Stato
-- Home: versione base navigabile da perfezionare con immagini e animazioni fotografiche.
-- Vulcano: scheda basata sui dati dell'utente, da completare con immagini originali.
-- Filicudi, Salina, Lipari, Panarea, Stromboli, Chi siamo, Contatti: da progettare.
-- Booking: **solo simulazione**, non controlla disponibilità o prezzi reali.
+Versione HTML del laboratorio approvato con **Home e Vulcano**.
 
 ## Design
-- Titoli: DM Serif Display.
-- UI e testo: Manrope, dimensioni aumentate.
-- Palette: petrolio `#103B53`, mare `#087DA8`, sabbia `#E8A15D`, avorio `#F7F5EF`, antracite `#24323A`.
+- Palette Mediterranean Luxury: #103B53, #087DA8, #E8A15D, #F7F5EF, #24323A
+- DM Serif Display (titoli), Manrope (UI e testo, incrementato di 2px)
+- Hero cinematico, reveal allo scroll, gallerie e booking dimostrativo
+- Logo SVG animato ricostruito dal marchio originale
 
-## Pubblicazione GitHub Pages
-Da **Settings → Pages**, scegliere **Deploy from a branch**, selezionare `main` e directory `/(root)`, quindi salvare.
+## Stato
+- **Home** e **Vulcano** attive
+- **Filicudi**, **Salina**, **Lipari**, **Panarea**, **Stromboli**, **Chi siamo**, **Contatti** da sviluppare
+- Alcune fotografie sono demo e non ancora associate definitivamente alle unità
+- Motore booking: solo simulazione, non collegato a disponibilità o prezzi reali
+- Terrazza comune: sdraio, ombrelloni e doccia (foto reali in arrivo)
 
-## Note
-Le fotografie originali e il logo SVG animato già presenti negli archivi del progetto **non sono ancora stati trasferiti in questo repository**. La prima pubblicazione non deve essere considerata una release pronta alla produzione. Il ramo `develop` è stato creato, ma verrà riallineato alla base prima delle modifiche successive.
-
-<!-- GitHub Pages deployment refresh: 2026-11-03 -->
+## Pubblicazione
+GitHub Pages legge il branch `main`, directory root; il branch `develop` viene utilizzato per gli aggiornamenti.
