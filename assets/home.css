@@ -12,3 +12,18 @@
 /* readability adjustment approved 2026-11-03 (+2px small text) */
 body{font-size:18px}.site-nav,.dropdown a{font-size:14px}.eyebrow,.hero-indicator,.scroll-nudge{font-size:12px}.btn,.booking-field label{font-size:14px}.booking-field input,.booking-field select{font-size:14px}.hero-desc,.intro-copy{font-size:16px}.benefit p,.gallery-side p,.properties-heading p,.property-body p{font-size:15px}.demo-notice,.gallery-count,.footer-bottom{font-size:12px}.property-body .text-link{font-size:15px}
 @media(max-width:540px){body{font-size:17px}.hero-desc{font-size:15px}.booking-field label{font-size:12px}.booking-field input,.booking-field select{font-size:13px}.hero-actions .btn{font-size:13px}.mobile-booking-btn{font-size:15px}}
+
+/* Matterport immersive invitation */
+.tour3d-banner{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(110deg,#082f43,#124d62 57%,#0d6f89);color:white;padding:100px 0}
+.tour3d-inner{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:50px;position:relative;z-index:1}
+.tour3d-copy h2{font:400 clamp(40px,5vw,70px)/1.07 'DM Serif Display',Georgia,serif;margin:16px 0 20px}
+.tour3d-copy h2 em{color:#E8A15D;font-style:normal}.tour3d-copy p{max-width:560px;font:400 17px/1.8 Manrope,Arial,sans-serif;color:#d5e9ee;margin-bottom:28px}
+.tour3d-button{display:inline-flex;align-items:center;gap:18px;padding:18px 28px!important;border-radius:50px;background:#E8A15D!important;color:#123b4c!important;font-weight:800;box-shadow:0 10px 34px #0004;transition:transform .3s,box-shadow .3s}
+.tour3d-button:hover{transform:translateY(-4px);box-shadow:0 15px 40px #0006}
+.tour3d-note{display:block;margin-top:17px;font:700 11px Manrope,Arial,sans-serif;letter-spacing:.12em;color:#c0dae0}
+.tour3d-preview{min-height:340px;display:grid;place-items:center;position:relative;background:linear-gradient(0deg,#082b46a8,#103b5344),url('photos/struttura-14.webp') center/cover;border:1px solid #ffffff65;border-radius:22px;box-shadow:0 25px 60px #021c2b69;overflow:hidden}
+.tour3d-ring{width:190px;height:190px;border:2px solid #ffffffb0;border-radius:50%;display:grid;place-items:center;box-shadow:0 0 0 22px #ffffff12,0 0 0 45px #ffffff0c;animation:tour-breathe 5s ease-in-out infinite}
+.tour3d-ring span{font:400 64px 'DM Serif Display',Georgia,serif}.tour3d-label{position:absolute;bottom:22px;font-size:11px;font-weight:800;letter-spacing:.2em}
+@keyframes tour-breathe{50%{transform:scale(1.06);box-shadow:0 0 0 30px #ffffff0a,0 0 0 55px #ffffff08}}
+@media(max-width:760px){.tour3d-banner{padding:70px 0}.tour3d-inner{grid-template-columns:1fr;gap:28px}.tour3d-preview{min-height:270px}.tour3d-copy h2{font-size:clamp(38px,9vw,54px)}}
+@media(prefers-reduced-motion:reduce){.tour3d-ring{animation:none}}
