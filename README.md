@@ -23,3 +23,5 @@ Da **Settings → Pages**, scegliere **Deploy from a branch**, selezionare `main
 
 ## Note
 Le fotografie originali e il logo SVG animato già presenti negli archivi del progetto **non sono ancora stati trasferiti in questo repository**. La prima pubblicazione non deve essere considerata una release pronta alla produzione. Il ramo `develop` è stato creato, ma verrà riallineato alla base prima delle modifiche successive.
+
+<!-- GitHub Pages deployment refresh: 2026-11-03 -->
