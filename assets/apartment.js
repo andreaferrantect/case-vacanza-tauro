@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const $=s=>document.querySelector(s), nav=$('#mainNav'), btn=$('#menuToggle');btn?.addEventListener('click',()=>{let open=nav.classList.toggle('open');btn.setAttribute('aria-expanded',open)});
+const $=s=>document.querySelector(s), nav=$('#mainNav'), btn=$('#menuToggle');btn?.addEventListener('click',()=>{if(!nav)return;let open=nav.classList.toggle('open');btn.setAttribute('aria-expanded',String(open))});
 const booking=$('#booking'),mobile=$('#mobileBooking');mobile?.addEventListener('click',()=>{let v=booking.classList.toggle('expanded');mobile.setAttribute('aria-expanded',v)});
 const ro=new IntersectionObserver(entries=>{for(const e of entries)if(e.isIntersecting){e.target.classList.add('visible');ro.unobserve(e.target)}},{threshold:.08});document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
 const hero=$('.hero-photo');if(hero&&!matchMedia('(prefers-reduced-motion: reduce)').matches){let frame=false;window.addEventListener('scroll',()=>{if(!frame){requestAnimationFrame(()=>{hero.style.backgroundPosition='50% calc(45% + '+Math.min(scrollY*.08,65)+'px)';frame=false});frame=true}},{passive:true})}
