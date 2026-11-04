@@ -60,7 +60,7 @@ header.site-head .nav-tour:hover{color:white!important}
 .tauro-strokes path:nth-child(3){stroke-dasharray:30 15;opacity:.55}
 @keyframes tauro-flow{from{stroke-dashoffset:-240}to{stroke-dashoffset:400}}
 section:has(>.tauro-strokes){position:relative;isolation:isolate}
-section:has(>.tauro-strokes)>:not(.tauro-strokes){position:relative;z-index:1}
+section:not(.hero):has(>.tauro-strokes)>:not(.tauro-strokes){position:relative;z-index:1}
 .tauro-highlight,.property-kicker{display:inline-block;color:#B87643;font:800 12px/1.6 Manrope,Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase}
 .tauro-highlight{margin:14px 0 20px;padding:7px 13px;border-left:3px solid #E8A15D;background:#E8A15D16}
 .property-kicker{display:block;font-size:11px;letter-spacing:.1em;margin-bottom:6px}
@@ -68,3 +68,27 @@ section:has(>.tauro-strokes)>:not(.tauro-strokes){position:relative;z-index:1}
 @media(max-width:950px){header.site-head nav.site-nav .nav-tour{padding:13px 0}header.site-head .brand-name{font-size:clamp(15px,2vw,19px)}}
 @media(max-width:540px){header.site-head .brand-name{font-size:15px!important;letter-spacing:-.04em}header.site-head .brand-name small{font-size:9px!important;letter-spacing:.12em}header.site-head .brand-symbol{width:36px;height:42px}}
 @media(prefers-reduced-motion:reduce){.tauro-strokes path{animation:none!important}}
+
+/* CVT mobile refinement · November 2026 */
+html,body{max-width:100%;overflow-x:clip}
+.shell,.container,.intro-grid,.detail-grid,.information-feature,.cta-pair,.footer-content,.footer-inner{min-width:0}
+.shell>*,.container>*,.intro-grid>*,.detail-grid>*,.information-feature>*,.cta-pair>*,.footer-content>*,.footer-inner>*{min-width:0}
+section:has(>.tauro-strokes){overflow-x:clip}
+section.hero>.hero-photo{position:absolute!important;inset:-9%!important;z-index:0!important;background-size:cover!important;background-position:center 46%!important}
+section.hero>.hero-shade{position:absolute!important;inset:0!important;z-index:1!important}
+section.hero>.hero-content{position:relative;z-index:3}
+section.hero>.room-lines,section.hero>.tauro-strokes{z-index:2}
+header.site-head .brand-symbol,.footer .brand-symbol{animation:cvt-logo-fade 1.2s ease-out both}
+@keyframes cvt-logo-fade{from{opacity:0}to{opacity:1}}
+@media(max-width:950px){
+ header.site-head{transition:transform .32s ease,background .4s,box-shadow .4s!important;will-change:transform}
+ header.site-head.is-scrolled{animation:none!important}
+ header.site-head.cvt-header-hidden{transform:translate3d(0,-110%,0)!important;pointer-events:none}
+ header.site-head .head-cta{display:none!important}
+ header.site-head .head-inner{gap:14px}
+ header.site-head .brand{min-width:0}
+ header.site-head .brand-name{white-space:nowrap}
+ header.site-head .menu-toggle{flex:0 0 auto;margin-left:auto}
+ input,select,textarea{font-size:16px!important}
+}
+@media(prefers-reduced-motion:reduce){header.site-head .brand-symbol,.footer .brand-symbol{animation:none!important;opacity:1!important}}
