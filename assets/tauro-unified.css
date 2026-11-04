@@ -113,3 +113,30 @@ section .tauro-strokes path{animation:none!important}
 .cvt-about-more article p{font-size:17px;line-height:1.8}
 @media(max-width:720px){.cvt-about-more{grid-template-columns:1fr;gap:20px}.cvt-about-more article{padding:24px}}
 @media(prefers-reduced-motion:reduce){section.hero>.cvt-hero-waves path,section .tauro-strokes{animation:none!important}section .tauro-strokes{clip-path:none!important}}
+
+/* CVT · definitive line art: full-width header trio, one continuous stroke per section */
+section.hero>.cvt-hero-waves{
+ position:absolute!important;left:0!important;bottom:13px!important;width:100%!important;
+ height:clamp(125px,15.3vw,220px)!important;max-width:none!important;
+ opacity:.75!important;z-index:4!important;pointer-events:none!important;overflow:hidden!important;
+}
+section.hero>.cvt-hero-waves path{
+ fill:none!important;stroke:#E8A15D!important;stroke-width:1.1!important;
+ stroke-dasharray:2100!important;stroke-dashoffset:2100;
+ animation:cvt-hero-line-trace 3s 1s linear forwards!important;
+}
+@keyframes cvt-hero-line-trace{from{stroke-dashoffset:2100}to{stroke-dashoffset:0}}
+section:not(.hero) .tauro-strokes{
+ opacity:.42!important;clip-path:inset(0 100% 0 0);
+ animation:cvt-single-stroke-reveal 19s linear forwards!important;
+ animation-play-state:paused!important;
+}
+section:not(.hero) .tauro-strokes.cvt-stroke-visible{animation-play-state:running!important}
+section:not(.hero) .tauro-strokes path{
+ fill:none!important;stroke:#C98954!important;stroke-width:1.6!important;
+ stroke-dasharray:none!important;stroke-dashoffset:0!important;animation:none!important;
+}
+@media(prefers-reduced-motion:reduce){
+ section.hero>.cvt-hero-waves path{animation:none!important;stroke-dasharray:none!important;stroke-dashoffset:0!important}
+ section:not(.hero) .tauro-strokes{animation:none!important;clip-path:none!important}
+}
