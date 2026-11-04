@@ -140,3 +140,19 @@ section:not(.hero) .tauro-strokes path{
  section.hero>.cvt-hero-waves path{animation:none!important;stroke-dasharray:none!important;stroke-dashoffset:0!important}
  section:not(.hero) .tauro-strokes{animation:none!important;clip-path:none!important}
 }
+
+/* CVT scroll coordination — desktop menu + sticky booking */
+header.site-head{transition:transform .32s ease,background .4s,box-shadow .4s!important}
+header.site-head.is-scrolled{animation:none!important}
+header.site-head.cvt-header-hidden{transform:translate3d(0,-110%,0)!important;pointer-events:none}
+@media(min-width:951px){
+ header.site-head{position:fixed!important}
+ .booking{top:82px;transition:top .32s ease}
+ html.cvt-header-hidden .booking{top:0}
+ .booking-wrap{position:sticky;top:92px;z-index:190;transition:top .32s ease}
+ html.cvt-header-hidden .booking-wrap{top:0}
+}
+/* Ensure the sole continuous line is noticeable and starts on section entry */
+section:not(.hero) .tauro-strokes{z-index:2!important;opacity:.72!important;animation-duration:7s!important;pointer-events:none!important}
+section:not(.hero) .tauro-strokes path{stroke:#C98954!important;stroke-width:1.6!important;stroke-dasharray:none!important}
+@media(prefers-reduced-motion:reduce){section:not(.hero) .tauro-strokes{animation:none!important;clip-path:none!important}}
