@@ -41,3 +41,41 @@ body{font-size:18px}.site-nav,.dropdown a{font-size:14px}.eyebrow,.hero-indicato
  .booking-field input,.booking-field select{font-size:16px!important}
  .footer{padding-bottom:calc(118px + env(safe-area-inset-bottom,0px))!important}
 }
+
+/* Verified portal presence and native-swipe review carousel */
+.cvt-reviews-section{background:#103B53;color:#fff;padding:95px 0 88px;overflow:hidden}
+.cvt-reviews-head{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(290px,.75fr);gap:50px;align-items:center}
+.cvt-reviews-head .eyebrow{color:#E8A15D}
+.cvt-reviews-head h2{font-size:clamp(36px,4.4vw,60px);line-height:1.12;margin:20px 0 18px}
+.cvt-reviews-head h2 em{color:#E8A15D;font-style:italic}
+.cvt-reviews-head p{max-width:600px;color:#cfe1e8;font-size:17px;line-height:1.75}
+.cvt-review-score{background:#fff;color:#103B53;padding:26px 30px;border-radius:20px;box-shadow:0 20px 60px #00162150;display:flex;flex-direction:column;gap:15px}
+.cvt-booking-logo{display:flex;align-items:center;gap:10px;color:#103B53;font-weight:800;font-size:23px;letter-spacing:-.04em}
+.cvt-booking-mark{display:grid;place-items:center;background:#003b95;color:#fff;border-radius:8px;width:37px;height:37px;font-family:Manrope,sans-serif}
+.cvt-score-line{display:flex;align-items:center;gap:20px}
+.cvt-score-line>strong{display:grid;place-items:center;background:#003b95;color:#fff;border-radius:12px 12px 12px 3px;padding:10px 15px;font-size:36px;line-height:1.1}
+.cvt-score-line>div{display:flex;flex-direction:column}
+.cvt-score-line b{font-size:19px}.cvt-score-line small{font-size:13px;color:#5e7080;margin-top:3px}
+.cvt-score-feature{border-top:1px solid #dae4e7;padding-top:12px;font-size:14px;font-weight:800;display:flex;justify-content:space-between}
+.cvt-score-feature strong{font-size:18px}
+.cvt-booking-link{font-size:13px;font-weight:800;color:#00599f;line-height:1.5;text-decoration:underline;text-underline-offset:4px}
+.cvt-reviews-toolbar{display:flex;align-items:center;justify-content:space-between;gap:20px;margin:50px 0 17px}
+.cvt-reviews-toolbar>span{font-size:12px;font-weight:800;letter-spacing:.14em;color:#d6e6ea}
+.cvt-reviews-toolbar>div{display:flex;gap:10px}
+.cvt-review-arrow{border:1px solid #ffffff85;background:transparent;color:white;border-radius:50%;width:42px;height:42px;font-size:21px;cursor:pointer;transition:background .2s}
+.cvt-review-arrow:hover{background:#ffffff22}
+.cvt-review-track{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-inline:contain;scrollbar-width:thin;scrollbar-color:#e8a15d44 transparent;padding:4px 0 20px;max-width:100%;-webkit-overflow-scrolling:touch}
+.cvt-review-card{flex:0 0 clamp(265px,33.333vw,380px);scroll-snap-align:start;min-width:0;min-height:255px;background:#f8f7f2;color:#223d48;border-radius:18px;padding:25px;display:flex;flex-direction:column}
+.cvt-review-card-top{display:flex;justify-content:space-between;gap:8px;color:#ad712f;font-size:12px;font-weight:800}
+.cvt-review-card-top span:last-child{font-size:11px;color:#37627b}
+.cvt-review-card p{font:400 18px/1.57 'DM Serif Display',Georgia,serif;flex:1;margin:24px 0}
+.cvt-review-author{border-top:1px solid #d9e3e4;padding-top:13px;display:flex;flex-direction:column}
+.cvt-review-author strong{font-size:13px}.cvt-review-author span{font-size:11px;color:#627680}
+.cvt-portals{margin-top:20px;padding:23px 0 0;border-top:1px solid #ffffff2c;display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.cvt-portals-kicker{letter-spacing:.16em;font-weight:800;font-size:12px;color:#cddfe5}
+.cvt-airbnb-card{display:inline-flex;align-items:center;gap:12px;padding:12px 17px;border-radius:99px;background:#fff;color:#103B53;font-size:13px;font-weight:700;transition:transform .25s}
+.cvt-airbnb-card:hover{transform:translateY(-3px)}
+.cvt-airbnb-card strong{font-size:23px;letter-spacing:-.055em;color:#ff385c}
+.cvt-airbnb-symbol{display:grid;place-items:center;width:27px;height:27px;border-radius:50%;background:#ff385c;color:#fff;font-size:22px}
+.cvt-portals-note{font-size:12px;color:#cfdee5}
+@media(max-width:760px){.cvt-reviews-section{padding:60px 0}.cvt-reviews-head{grid-template-columns:1fr;gap:23px}.cvt-review-score{padding:22px}.cvt-reviews-toolbar{margin-top:32px}.cvt-review-card{flex-basis:83vw;max-width:345px;min-height:250px;padding:22px}.cvt-reviews-head p{font-size:15px}}

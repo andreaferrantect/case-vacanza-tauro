@@ -92,3 +92,24 @@ header.site-head .brand-symbol,.footer .brand-symbol{animation:cvt-logo-fade 1.2
  input,select,textarea{font-size:16px!important}
 }
 @media(prefers-reduced-motion:reduce){header.site-head .brand-symbol,.footer .brand-symbol{animation:none!important;opacity:1!important}}
+
+/* CVT 2026-11-04 · navigation, header accents, editorial motion */
+header.site-head,header.site-head.is-scrolled{z-index:250!important}
+header.site-head .site-nav,header.site-head .nav-group,header.site-head .dropdown{z-index:260}
+header.site-head .dropdown{z-index:270}
+section.hero>.hero-scroll{position:absolute!important;z-index:8!important;pointer-events:auto!important;color:#fff!important;opacity:1!important;text-shadow:0 2px 12px #001825dd}
+section.hero>.hero-scroll:hover{color:#E8A15D!important}
+section.hero>.hero-wave{z-index:5;pointer-events:none}
+section.hero>.cvt-hero-waves{position:absolute;bottom:65px;left:-40px;width:320px;max-width:none;height:auto;opacity:.65;z-index:4;pointer-events:none;overflow:visible}
+section.hero>.cvt-hero-waves path{stroke:#E8A15D;fill:none;stroke-width:1.1;stroke-dasharray:500;animation:drawLine 3s 1s both}
+@keyframes drawLine{from{stroke-dashoffset:500}to{stroke-dashoffset:0}}
+/* Keep the established thin dashed stroke; reveal once then hold its completed path. */
+section .tauro-strokes{opacity:.38;clip-path:inset(0 100% 0 0);animation:cvt-single-stroke-reveal 19s linear forwards}
+section .tauro-strokes path{animation:none!important}
+@keyframes cvt-single-stroke-reveal{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+.cvt-about-more{display:grid;grid-template-columns:1fr 1fr;gap:38px;margin-top:55px}
+.cvt-about-more article{background:#fff;border:1px solid #e9e3db;border-radius:18px;padding:30px 34px}
+.cvt-about-more article h3{margin:12px 0 17px;color:#103B53}
+.cvt-about-more article p{font-size:17px;line-height:1.8}
+@media(max-width:720px){.cvt-about-more{grid-template-columns:1fr;gap:20px}.cvt-about-more article{padding:24px}}
+@media(prefers-reduced-motion:reduce){section.hero>.cvt-hero-waves path,section .tauro-strokes{animation:none!important}section .tauro-strokes{clip-path:none!important}}
